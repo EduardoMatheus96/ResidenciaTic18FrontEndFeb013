@@ -1,0 +1,21 @@
+<form (ngSubmit)="registerAppointment()">
+  <input [(ngModel)]="appointment.nome" name="nome" placeholder="Nome do Pet">
+  <input [(ngModel)]="appointment.data" type="date" name="data" placeholder="Data do Atendimento">
+  <textarea [(ngModel)]="appointment.detalhes" name="detalhes" placeholder="Detalhes do Atendimento"></textarea>
+
+  <button type="submit">Registrar Atendimento</button>
+</form>
+
+<!-- <form [formGroup]="appointment" (ngSubmit)="registerAppointment()">
+
+  <label for="nome">Nome do Pet:</label>
+  <input id="dateAtendimento" formControlName="nome">
+
+  <label for="data">Data do Atendimento:</label>
+  <input type="date" id="dateAtendimento" formControlName="data">
+
+  <label for="detalhes">Detalhes do Atendimento:</label>
+  <input id="dateAtendimento" formControlName="detalhes">
+
+ <button type="submit">Enviar Cadastro</button>
+</form> -->
