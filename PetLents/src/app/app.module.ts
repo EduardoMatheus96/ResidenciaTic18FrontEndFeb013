@@ -7,11 +7,12 @@ import { ApointmentDetailComponent } from './apointment-detail/apointment-detail
 import { ApointmentEditComponent } from './apointment-edit/apointment-edit.component';
 import { ApointmentListComponent } from './apointment-list/apointment-list.component';
 import { ApointmentRegistrationComponent } from './apointment-registration/apointment-registration.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     FormsModule,
-    ReactiveFormsModule
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
